@@ -4,398 +4,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Primary -->
-    <title>Shyam - I'm Java Full Stack Developer | Software Developer</title>
-    <meta name="title" content="Shyam - I'm Java Full Stack Developer | Software Developer">
-    <meta name="description" content="Hii, This is my Personal Portfolio Website. Shyam - I'm Java Full Stack Developer | Software Developer">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="src/Images/favicon.ico" type="image/x-icon">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="src/CSS/style.css">
-
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
 
-                <figure class="avatar-box">
-                  <img src="src/Images/avtar.png" alt="Shyam Kumar" width="80">
-                </figure>
-        
-                <div class="info-content">
-                  <h1 class="name" title="Shyam Kumar">Shyam Kumar</h1>
-        
-                  <p class="title">Software Developer</p>
+    <!-- navbar -->
+    <nav class="navbar">
+        <ul class="link-group">
+            <li class="link active"><a href="#">Home</a></li>
+            <li class="link"><a href="#">Projects</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home-section active">
+        <h1 class="hero-heading">Hello, I am <br> SHYAM</h1>
+        <img src="home.jpg" alt="home page" class="hero-img">
+    </section>
+
+    <!-- Project Section -->
+    <section class="project-section">
+        <h1 class="project-heading">some of my projects</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="card1.jpg" alt="card_1" class="project-img">
+                <div class="project-content">
+                    <h1 class="project-title">Project 01</h1>
+                    <p class="project-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis inventore veritatis et impedit pariatur beatae quaerat enim, ab amet!</p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                        <button class="project-btn live">see live</button>
+                    </div>
                 </div>
-        
-                <button class="info_more-btn" data-sidebar-btn>
-                  <span>Contacts</span>
-        
-                  <ion-icon name="chevron-down"></ion-icon>
-                </button>
-        
             </div>
-
-            <div class="sidebar-info_more">
-                <div class="separator"></div>
-                <ul class="contacts-list">
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-              
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-              
-                            <a href="mailto:shyamiaf5@gmail.com" class="contact-link" target="_blank">shyamiaf5@gmail.com</a>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
-              
-                        <div class="contact-info">
-                            <p class="contact-title">Phone</p>
-              
-                            <a href="tel:+917294132590" class="contact-link" target="_blank">+91 7294132590</a>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
-                        </div>
-              
-                        <div class="contact-info">
-                            <p class="contact-title">Birthday</p>
-              
-                            <time datetime="1982-06-23">November 11, 2002</time>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-              
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
-              
-                            <address>Delhi, India</address>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="separator"></div>
-
-                <ul class="social-list">
-
-                    <li class="social-item">
-                      <a href="https://www.linkedin.com/in/shyamk5/" class="social-link" target="_blank">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                      </a>
-                    </li>
-          
-                    <li class="social-item">
-                      <a href="https://www.instagram.com/imshyamk_/" class="social-link" target="_blank">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                      </a>
-                    </li>
-          
-                </ul>
-
-            </div>
-        </aside>
-
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- NavBar -->
-            <nav class="navbar">
-
-                <ul class="navbar-list">
-        
-                  <li class="navbar-item">
-                    <button class="navbar-link  active" data-nav-link>About</button>
-                  </li>
-        
-                  <li class="navbar-item">
-                    <button class="navbar-link" data-nav-link>Resume</button>
-                  </li>
-        
-                  <li class="navbar-item">
-                    <button class="navbar-link" data-nav-link>Contact</button>
-                  </li>
-        
-                </ul>
-        
-            </nav>
-
-            <!-- About -->
-            <article class="about  active" data-page="about">
-                <header>
-                    <h2 class="h2 article-title">About me</h2>
-                </header>
-
-                <section class="about-text">
-                    <p>
-                      I'm Creative Innovator, Problem Solver, Quick Learner and Software Developer from Delhi, India.
-
-                    </p>
-          
-                    <p>
-                      Detailed-oriented, responsible, and committed performer, with a get-it-done, on-time, and high-quality product spirit. I like to solve problems. Throughout my career.
-                      Constantly looking for new opportunities to upskill my knowledge and be better.
-                    </p>
-                </section>
-
-                <!-- Service -->
-                <section class="service">
-                    <h3 class="h3 service-title">List of the technologies that I'm familiar with!</h3>
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="src/Images/UI.svg" alt="design icon" width="40">
-                            </div>
-                
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">UI Technologies</h4>
-                
-                                <p class="service-item-text">
-                                  HTML | CSS | JavaScript | jQuery | ReactJs
-                                </p>
-                            </div>
-
-                        </li>
-
-                        <li class="service-item">
-                          <div class="service-icon-box">
-                              <img src="src/Images/Java.svg" alt="design icon" width="40">
-                          </div>
-              
-                          <div class="service-content-box">
-                              <h4 class="h4 service-item-title">Java Technologies</h4>
-              
-                              <p class="service-item-text">
-                                Java | JDBC | JNDI | Servlet | JSP | Java Mail
-                              </p>
-                          </div>
-
-                        </li>
-
-                        <li class="service-item">
-                          <div class="service-icon-box">
-                            <img src="src/Images/DB.svg" alt="design icon" width="40">
-                          </div>
-            
-                          <div class="service-content-box">
-                            <h4 class="h4 service-item-title">Oracle Database</h4>
-            
-                            <p class="service-item-text">
-                              SQL | MySQL | (PL/SQL)
-                            </p>
-                          </div>
-
-                        </li>
-
-                        <li class="service-item">
-                          <div class="service-icon-box">
-                            <img src="src/Images/DSA.svg" alt="design icon" width="40">
-                          </div>
-          
-                          <div class="service-content-box">
-                            <h4 class="h4 service-item-title">Data Structure & Algorithm</h4>
-          
-                            <p class="service-item-text">
-                              Organizing and managing data, such as arrays, linked lists, stacks, queues, trees, and graphs.
-                            </p>
-                          </div>
-
-                        </li>
-
-                    </ul>
-
-                </section>
-
-            </article>
-
-            <article class="resume" data-page="resume">
-              <header>
-                <h2 class="h2 article-title">Resume</h2>
-              </header>
-
-              <section class="timeline">
-                <div class="title-wrapper">
-                  <div class="icon-box">
-                    <ion-icon name="book-outline"></ion-icon>
-                  </div>
-      
-                  <h3 class="h3">Education</h3>
+            <div class="project-card">
+                <img src="card2.png" alt="card_2" class="project-img">
+                <div class="project-content">
+                    <h1 class="project-title">Project 02</h1>
+                    <p class="project-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis inventore veritatis et impedit pariatur beatae quaerat enim, ab amet!</p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                        <button class="project-btn live">see live</button>
+                    </div>
                 </div>
-
-                <ol class="timeline-list">
-                  <li class="timeline-item">
-
-                    <h4 class="h4 timeline-item-title">Bachelor of Computer Application, 2023 BCA</h4>
-      
-                    <span>2019 — 2023</span>
-      
-                    <p class="timeline-text">
-                      University Name - Indira Gandhi National Open University, Delhi <br>
-                      Marks Obtained - Result Awaited
-                    </p>
-      
-                  </li>
-
-                  <li class="timeline-item">
-
-                    <h4 class="h4 timeline-item-title">Intermediate 2019, SSCE (12th)</h4>
-      
-                    <span>2017 — 2019</span>
-      
-                    <p class="timeline-text">
-                      University Name - Bihar School Examination Board, Patna <br>
-                      Marks Obtained - 78.2%
-                    </p>
-      
-                  </li>
-
-                  <li class="timeline-item">
-
-                    <h4 class="h4 timeline-item-title">High school 2017, HSLC (10th)</h4>
-      
-                    <span>2016 — 2017</span>
-      
-                    <p class="timeline-text">
-                      University Name - Bihar School Examination Board, Patna <br>
-                      Marks Obtained - 76.6%
-                    </p>
-      
-                  </li>
-
-                </ol>
-
-              </section>
-
-              <section class="skill">
-                <h3 class="h3 skills-title">My skills</h3>
-                <ul class="skills-list content-card">
-                  <li class="skills-item">
-
-                    <div class="title-wrapper">
-                      <h5 class="h5">UI Technologies</h5>
-                      <data value="70">70%</data>
+            </div>
+            <div class="project-card">
+                <img src="card3.jpg" alt="card_3" class="project-img">
+                <div class="project-content">
+                    <h1 class="project-title">Project 03</h1>
+                    <p class="project-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis inventore veritatis et impedit pariatur beatae quaerat enim, ab amet!</p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                        <button class="project-btn live">see live</button>
                     </div>
-      
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="card4.png" alt="card_4" class="project-img">
+                <div class="project-content">
+                    <h1 class="project-title">Project 04</h1>
+                    <p class="project-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis inventore veritatis et impedit pariatur beatae quaerat enim, ab amet!</p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                        <button class="project-btn live">see live</button>
                     </div>
-      
-                  </li>
-
-                  <li class="skills-item">
-
-                    <div class="title-wrapper">
-                      <h5 class="h5">Java Technologies</h5>
-                      <data value="80">80%</data>
-                    </div>
-      
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill" style="width: 80%;"></div>
-                    </div>
-      
-                  </li>
-
-                  <li class="skills-item">
-
-                    <div class="title-wrapper">
-                      <h5 class="h5">Oracle Database</h5>
-                      <data value="80">80%</data>
-                    </div>
-      
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill" style="width: 80%;"></div>
-                    </div>
-      
-                  </li>
-      
-                  <li class="skills-item">
-      
-                    <div class="title-wrapper">
-                      <h5 class="h5">Java Frameworks</h5>
-                      <data value="70">70%</data>
-                    </div>
-      
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill" style="width: 70%;"></div>
-                    </div>
-      
-                  </li>
-
-                </ul>
-
-              </section>
-
-            </article>
-
-            <!-- Contact -->
-
-            <article class="contact" data-page="contact">
-              <header>
-                <h2 class="h2 article-title">Contact</h2>
-              </header>
-
-              <section class="mapbox" data-mapbox>
-                <figure>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.05313045025!2d76.81303963947191!3d28.643795376060293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1680810724249!5m2!1sen!2sin"
-                    width="400" height="300" loading="lazy"></iframe>
-                </figure>
-              </section>
-
-              <section class="about-text">
-                <p>
-                  My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you! Feel free to mail me about any relevant job updates.
-                </p>
-              </section>
-
-              <section class="contact-form">
-      
-                  <a href="mailto:shyamiaf5@gmail.com">
-                    <button class="form-btn" type="submit">
-                      <ion-icon name="paper-plane"></ion-icon>
-                      <span>Mail Me</span>
-                    </button>
-                  </a>
-      
-                </form>
-      
-              </section>
-              
-            </article>
-
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about">
+            <div class="about-img-container">
+                <img src="About.jpg" alt="Home_img" class="about-img">
+                <button class="download-cv-btn">See my CV</button>
+            </div>
+            <p class="about-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam provident delectus quia dolore odio aliquam quibusdam culpa magnam veniam, ex dolorum id voluptatum minus mollitia distinctio est nulla, ab maxime? Minus optio repellat nemo architecto minima iusto obcaecati, facilis earum commodi ipsa. Numquam provident delectus quia dolore odio aliquam quibusdam culpa magnam veniam, ex dolorum id voluptatum minus mollitia distinctio est nulla, ab maxime? Minus optio repellat nemo architecto minima iusto obcaecati, facilis earum commodi ipsa.</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="skill-section">
+            <h1 class="heading">Skills</h1>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="html.png" alt="" class="skill-img">
+                    <div class="skill-level">80%</div>
+                    <h1 class="skill-name">HTML</h1>
+                    <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quod eius quisquam eaque, tempore incidunt ratione esse accusantium aperiam nostrum?</p>
+                </div>
+                <div class="skill-card">
+                    <img src="css.png" alt="" class="skill-img">
+                    <div class="skill-level">70%</div>
+                    <h1 class="skill-name">CSS</h1>
+                    <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quod eius quisquam eaque, tempore incidunt ratione esse accusantium aperiam nostrum?</p>
+                </div>
+                <div class="skill-card">
+                    <img src="javascript.jpg" alt="" class="skill-img">
+                    <div class="skill-level">60%</div>
+                    <h1 class="skill-name">JavaScript</h1>
+                    <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quod eius quisquam eaque, tempore incidunt ratione esse accusantium aperiam nostrum?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            <h1 class="heading">education and experiences</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">2017</h1>
+                    <p class="card-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum distinctio ullam totam nulla dolor commodi laudantium beatae quo pariatur inventore?</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">2019</h1>
+                    <p class="card-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum distinctio ullam totam nulla dolor commodi laudantium beatae quo pariatur inventore?</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">2022</h1>
+                    <p class="card-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum distinctio ullam totam nulla dolor commodi laudantium beatae quo pariatur inventore?</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">2017</h1>
+                    <p class="card-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum distinctio ullam totam nulla dolor commodi laudantium beatae quo pariatur inventore?</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <form class="contact-form">
+            <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
+            <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
+            <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+            <button type="submit" class="form-submit-btn">contact</button>
+        </form>
+
+        <!-- Google Map -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.8956864118995!2d84.47726591451634!3d26.715779274972792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39936d1fce7ce941%3A0xb2ecf54ba7786830!2sHariom%20Mislenious!5e0!3m2!1sen!2sin!4v1640206787372!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </section>
 
 
-
-
-
-    <!-- Custom JS Link -->
-    <script src="src/JS/script.js"></script>
-
-    <!-- ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="function.js"></script>
 </body>
 </html>
