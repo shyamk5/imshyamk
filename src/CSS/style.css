@@ -1,7 +1,7 @@
 
 
 /**
- * copyright 2022 @imshyamk_
+ * copyright 2023 @imshyamk_
  */
 
 :root {
@@ -238,11 +238,8 @@
     margin-bottom: 75px;
     min-width: 259px;
   }
-  
-  
-  
-  
-  
+
+
   /*-----------------------------------*\
     #SIDEBAR
   \*-----------------------------------*/
@@ -492,6 +489,21 @@
 
   
   .article-title { margin-bottom: 30px; }
+
+
+  /* Logo List */
+
+
+  .logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-flex;
+  }
+  .logo-column {
+    float: left;
+    margin-bottom: 20px;
+  
+  }
   
   
   /**
@@ -517,7 +529,7 @@
   .timeline-item:not(:last-child) { margin-bottom: 20px; }
   
   .timeline-item-title {
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
     line-height: 1.3;
     margin-bottom: 7px;
   }
